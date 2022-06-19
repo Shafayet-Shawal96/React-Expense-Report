@@ -2,8 +2,9 @@ import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 import { useState } from "react";
+import ExpenseChart from "./ExpenseChart";
 
-const ExpenseItem = ({ item }) => {
+const ExpenseItem = ({ id, item }) => {
   const [title, setTitle] = useState(item.title);
   // console.log(title);
 
